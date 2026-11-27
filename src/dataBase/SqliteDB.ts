@@ -96,3 +96,27 @@ export default learning_db;
 // console.log('getEndwith :>> ', getEndwith); 
 // console.log('getStartsWith :>> ', getStartsWith); 
 
+// //COUNT 
+// const getCount = db.prepare("SELECT COUNT(*) FROM members WHERE name=?").get("mani")
+// console.log('getCount :>> ', getCount);
+
+// AS
+// const as_name = db.prepare("SELECT COUNT(*) AS first_name FROM members WHERE name=?").get("pavi")
+// console.log('as_name :>> ', as_name);
+
+//SUM,MAX,MIN,AVG
+// "SELECT SUM(stock) AS total_stock FROM products"   // adds up all stock
+// "SELECT AVG(price) AS avg_price FROM products"     // average price
+// "SELECT MIN(price) AS cheapest FROM products"      // lowest price
+// "SELECT MAX(price) AS costliest FROM products"     // highest price
+
+// GROUP BY
+//const perCategory = shop_db.prepare(`SELECT category, COUNT(*) AS total FROM products GROUP BY category`).all();
+// console.log(perCategory);
+
+// HAVING 
+// `SELECT category, COUNT(*) AS total FROM productsGROUP BY category HAVING COUNT(*) > 1`
+
+// FULL ORDER
+// SELECT ... FROM ... WHERE ... GROUP BY ... HAVING ... ORDER BY ... LIMIT ... OFFSET ...
+// `SELECT category, SUM(stock) AS total_stock FROM products WHERE price > ? GROUP BY category HAVING SUM(stock) > ? ORDER BY total_stock DESC`
