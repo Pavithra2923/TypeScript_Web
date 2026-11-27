@@ -2,6 +2,7 @@
   "name": "typescipt-web",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,7 +10,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1"
   }
 }
