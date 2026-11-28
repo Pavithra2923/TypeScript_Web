@@ -85,7 +85,7 @@ shop_db.exec(`CREATE TABLE IF NOT EXISTS products(
 // const insert = shop_db.prepare("INSERT INTO products (name) VALUES (?)").run("dress")
 // console.log('insert :>> ', insert);
 // const showprd = shop_db.prepare("UPDATE products SET category = ? WHERE  name = ?")
-// console.log(' :>> ',showprd.run("NULL","dress") );
+// console.log(' :>> ',showprd.run("NULL","dress") );5000
 // const showw = shop_db.prepare("SELECT * FROM products WHERE category == ?").all("NULL")
 // console.log('showw :>> ', showw);
 
